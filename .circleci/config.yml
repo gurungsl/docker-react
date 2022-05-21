@@ -4,11 +4,13 @@ jobs:
   build:
     working_directory: ~/myapp
     docker:
-      - image: node:16-alpine
+      - image: circleci/node:16
     steps:
       - checkout
-      - run: npm install
-      - run: npm run start
+      - run: 
+          commnad: npm install --save
+      - run: 
+          command: npm run start
 workflows:
   build_and_test:
     jobs:
