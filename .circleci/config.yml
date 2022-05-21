@@ -10,7 +10,7 @@ jobs:
       - run: 
           command: npm install --save
       - run: 
-          command: npm run start
+          command: npm run test
 workflows:
   build_and_test:
     jobs:
