@@ -7,8 +7,7 @@ jobs:
       - image: node:16-alpine
     steps:
       - checkout
-      - run: docker build
-      - run: npm run test
+      - run: npm run start
 workflows:
   build_and_test:
     jobs:
