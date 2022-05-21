@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run: 
-          commnad: npm install --save
+          command: npm install --save
       - run: 
           command: npm run start
 workflows:
