@@ -9,8 +9,6 @@ jobs:
       - checkout
       - run: 
           command: npm install --save
-      - run:
-          command: npm run build
       - run: 
           command: npm run test
 workflows:
